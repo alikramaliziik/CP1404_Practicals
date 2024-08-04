@@ -75,4 +75,3 @@ def using_csv_namedtuple():
 
 # Uncomment the following line to run this version
 # using_csv_namedtuple()
-
