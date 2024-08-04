@@ -26,12 +26,17 @@ if __name__ == "__main__":
     main()
 
 #test
-$ python languages.py
-Java, Typing: Static, Reflection: Yes, First appeared in: 1995
-C++, Typing: Static, Reflection: No, First appeared in: 1983
-Python, Typing: Dynamic, Reflection: Yes, First appeared in: 1991
-Visual Basic, Typing: Static, Reflection: No, First appeared in: 1991
-Ruby, Typing: Dynamic, Reflection: Yes, First appeared in: 1995
+languages = [
+    {"name": "Java", "typing": "Static", "reflection": "Yes", "year": 1995},
+    {"name": "C++", "typing": "Static", "reflection": "No", "year": 1983},
+    {"name": "Python", "typing": "Dynamic", "reflection": "Yes", "year": 1991},
+    {"name": "Visual Basic", "typing": "Static", "reflection": "No", "year": 1991},
+    {"name": "Ruby", "typing": "Dynamic", "reflection": "Yes", "year": 1995},
+]
+
+for language in languages:
+    print(f'{language["name"]}, Typing: {language["typing"]}, Reflection: {language["reflection"]}, First appeared in: {language["year"]}')
+
 
 #modification
 from programming_language import ProgrammingLanguage
@@ -57,17 +62,31 @@ if __name__ == "__main__":
     main()
 
 #test
-$ python languages.py
-Java, Typing: Static, Reflection: Yes, First appeared in: 1995
-Is Java dynamically typed? No
-C++, Typing: Static, Reflection: No, First appeared in: 1983
-Is C++ dynamically typed? No
-Python, Typing: Dynamic, Reflection: Yes, First appeared in: 1991
-Is Python dynamically typed? Yes
-Visual Basic, Typing: Static, Reflection: No, First appeared in: 1991
-Is Visual Basic dynamically typed? No
-Ruby, Typing: Dynamic, Reflection: Yes, First appeared in: 1995
-Is Ruby dynamically typed? Yes
+languages = [
+    {"name": "Java", "typing": "Static", "reflection": "Yes", "year": 1995},
+    {"name": "C++", "typing": "Static", "reflection": "No", "year": 1983},
+    {"name": "Python", "typing": "Dynamic", "reflection": "Yes", "year": 1991},
+    {"name": "Visual Basic", "typing": "Static", "reflection": "No", "year": 1991},
+    {"name": "Ruby", "typing": "Dynamic", "reflection": "Yes", "year": 1995},
+]
+
+for language in languages:
+    print(f'{language["name"]}, Typing: {language["typing"]}, Reflection: {language["reflection"]}, First appeared in: {language["year"]}')
+languages = [
+    {"name": "Java", "typing": "Static", "reflection": "Yes", "year": 1995},
+    {"name": "C++", "typing": "Static", "reflection": "No", "year": 1983},
+    {"name": "Python", "typing": "Dynamic", "reflection": "Yes", "year": 1991},
+    {"name": "Visual Basic", "typing": "Static", "reflection": "No", "year": 1991},
+    {"name": "Ruby", "typing": "Dynamic", "reflection": "Yes", "year": 1995},
+]
+
+
+
+
+]
+
+for language in languages:
+    print(f'{language["name"]}, Typing: {language["typing"]}, Reflection: {language["reflection"]}, First appeared in: {language["year"]}')
 
 
 #adding more languages in

@@ -1,42 +1,88 @@
-# used_cars.py
-from car import Car
+from guitar import Guitar
 
 def main():
-    # Create a new Car object called "limo" that is initialised with 100 units of fuel.
-    limo = Car(100)
+    """Program to manage a list of guitars entered by the user."""
+    print("My guitars!")
+    guitars = []
+    guitar_number = 1
 
-    # You can add more code here to interact with the "limo" object if needed
-    print(f"Limo fuel: {limo.fuel}")
-    print(f"Limo odometer: {limo._odometer}")
+    while True:
+        name = input("Name: ")
+        if name.strip() == "":
+            break
+        year = int(input("Year: "))
+        cost = float(input("Cost: $"))
+        print(f"{name} ({year}) : ${cost:.2f} added.\n")
+        guitars.append(Guitar(name, year, cost))
 
-if __name__ == '__main__':
-    main()
-
-#modification
-# used_cars.py
-
-from car import Car  # Assuming car.py is in the same directory
-
-def main():
-    # Create named Car objects
-    my_car = Car("Toyota")
-    your_car = Car("Honda")
-
-    # Add fuel to the cars
-    my_car.add_fuel(50)
-    your_car.add_fuel(70)
-
-    # Drive the cars
-    my_car.drive(200)
-    your_car.drive(150)
-
-    # Display the cars using the __str__ method
-    print(my_car)
-    print(your_car)
+    print("\nThese are my guitars:")
+    for i, guitar in enumerate(guitars, 1):
+        vintage_status = "(vintage)" if guitar.is_vintage() else ""
+        print(f"Guitar {i}: {guitar} {vintage_status}")
 
 if __name__ == "__main__":
     main()
+#adapt guitar for testing with pre-defined data
+from guitar import Guitar
 
-#ouput
-Toyota, fuel=0, odometer=200
-Honda, fuel=0, odometer=150
+def main():
+    """Program to manage a list of guitars."""
+    print("My guitars!")
+    guitars = []
+    guitar_number = 1
+
+    # Test data for quick testing without user input
+    guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
+    guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
+
+    # Uncomment the below section for manual testing with user input
+    """
+    while True:
+        name = input("Name: ")
+        if name.strip() == "":
+            break
+        year = int(input("Year: "))
+        cost = float(input("Cost: $"))
+        print(f"{name} ({year}) : ${cost:.2f} added.\n")
+        guitars.append(Guitar(name, year, cost))
+    """
+
+    print("\nThese are my guitars:")
+    for i, guitar in enumerate(guitars, 1):
+        vintage_status = "(vintage)" if guitar.is_vintage() else ""
+        print(f"Guitar {i}: {guitar} {vintage_status}")
+
+if __name__ == "__main__":
+    main()
+#update
+from guitar import Guitar
+
+def main():
+    """Program to manage a list of guitars."""
+    print("My guitars!")
+    guitars = []
+    guitar_number = 1
+
+    # Test data for quick testing without user input
+    guitars.append(Guitar("Gibson L-5 CES", 1922, 16035.40))
+    guitars.append(Guitar("Line 6 JTV-59", 2010, 1512.9))
+
+    # Uncomment the below section for manual testing with user input
+    """
+    while True:
+        name = input("Name: ")
+        if name.strip() == "":
+            break
+        year = int(input("Year: "))
+        cost = float(input("Cost: $"))
+        print(f"{name} ({year}) : ${cost:.2f} added.\n")
+        guitars.append(Guitar(name, year, cost))
+    """
+
+    print("\nThese are my guitars:")
+    for i, guitar in enumerate(guitars, 1):
+        vintage_status = "(vintage)" if guitar.is_vintage() else ""
+        print(f"Guitar {i}: {guitar} {vintage_status}")
+
+if __name__ == "__main__":
+    main()

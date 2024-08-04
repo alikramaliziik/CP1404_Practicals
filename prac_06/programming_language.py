@@ -1,5 +1,5 @@
 """
-CP1404/CP5632 Practical - Programminglanguage class
+CP1404/CP5632 Practical - Programming language class
 Estimate: 30 minutes
 Start time: 14:00
 End time: 14:50
