@@ -1,6 +1,6 @@
 from guitar import Guitar
 
- def main():
+def main():
     """Program to manage a list of guitars entered by the user."""
     print("My guitars!")
     guitars = []

@@ -1,4 +1,4 @@
-from guitar import Guitar
+from guitar import Guitars
 
 def run_tests():
     """Run tests on the Guitar class."""

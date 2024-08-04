@@ -23,7 +23,7 @@ def main():
 if __name__ == "__main__":
     main()
 #adapt guitar for testing with pre-defined data
-from guitar import Guitar
+from guitar import Guitars
 
 def main():
     """Program to manage a list of guitars."""

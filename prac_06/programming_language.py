@@ -5,7 +5,7 @@ Start time: 14:00
 End time: 14:50
 Actual time taken: 50 minutes
 """
-class ProgrammingLanguage:
+class Programming Language:
     """Represent a Programming Language object."""
 
     def __init__(self, name, typing, reflection, year):
