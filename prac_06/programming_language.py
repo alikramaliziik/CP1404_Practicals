@@ -1,11 +1,11 @@
 """
-CP1404/CP5632 Practical - Programminglanguage class
+CP1404/CP5632 Practical - Programming language class
 Estimate: 30 minutes
 Start time: 14:00
 End time: 14:50
 Actual time taken: 50 minutes
 """
-class ProgrammingLanguage:
+class Programming Language:
     """Represent a Programming Language object."""
 
     def __init__(self, name, typing, reflection, year):
