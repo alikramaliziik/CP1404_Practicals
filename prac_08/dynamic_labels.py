@@ -27,3 +27,4 @@ class DynamicLabelsApp(App):
             self.root.ids.labels_box.add_widget(temp_label)
 
 DynamicLabelsApp().run()
+
