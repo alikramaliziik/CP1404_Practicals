@@ -1,0 +1,9 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'vertical'
+        # This layout is populated with Label widgets in app code
+        id: labels_box
+    Button:
+        text: "Create Labels"
+        on_press: app.create_labels()
