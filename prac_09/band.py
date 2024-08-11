@@ -29,4 +29,5 @@ Nuno Bettencourt is playing: Washburn N4 (1990) : $2,499.95
 Gary Cherone needs an instrument!
 Pat Badger is playing: Mouradian CS-74 Bass (2009) : $1,500.00
 Kevin Figueiredo needs an instrument!
+
 """
